@@ -481,9 +481,9 @@ img.pokemon-picture {
 .large-screen {
   position: absolute;
   width: 80%;
-  height: 20%;
+  height: 30%;
   left: 10%;
-  top: 10%;
+  top: 5%;
   border-radius: 5px;
   background: var(--screen-dark);
 }

@@ -9,6 +9,7 @@ const height = document.getElementById('height');
 const weight = document.getElementById('weight');
 const type1 = document.getElementById('type-1');
 const type2 = document.getElementById('type-2');
+const abilities = document.getElementById('abilities');
 
 //function for reseting fields
 const resetFields = () => {
@@ -30,9 +31,10 @@ const getPokemon = (num) => {
         nameScreen.innerHTML = data.name;
         height.innerHTML = `${data.height * 10} cm`;
         weight.innerHTML = `${data.weight / 10} kg`;
-        type1.innerHTML = data.types[0].type.name
-        type2.innerHTML = "______"
-        type2.innerHTML = data.types[1].type.name
+        type1.innerHTML = data.types[0].type.name;
+        type2.innerHTML = "______";
+        type2.innerHTML = data.types[1].type.name;
+        abilities.innerHTML = data.abilities.length
     })
     .catch(error => {
         console.error('An error occurred: ', error);
