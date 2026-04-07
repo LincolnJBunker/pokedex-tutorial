@@ -18,6 +18,7 @@ const resetFields = () => {
     weight.innerHTML = "";
     type1.innerHTML = "";
     type2.innerHTML = "";
+    abilities.innerHTML = "";
 }
 
 //function for getting a pokemon based on its index
